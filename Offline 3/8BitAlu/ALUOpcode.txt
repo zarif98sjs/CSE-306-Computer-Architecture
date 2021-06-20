@@ -1,0 +1,12 @@
+*********ALUOpcode***********
+Opcode in hexadecimal value : Operation
+
+0x0 : A + B //add
+0x1 : A - B //sub
+0x2 : A | B //or
+0x3 : A & B //and
+0x4 : ~(A | B) //nor
+0x5 : B << A //sll
+0x6 : B >>> A //srl
+0x7 : B >> A //sra
+
