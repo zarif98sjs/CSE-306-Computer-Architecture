@@ -1,4 +1,0 @@
-278 says: label = loop
-278 says: label = exit
-v2.0 raw
-e0020 e0010 7030a 13108 02100 71101 72201 60300 

@@ -1,0 +1,29 @@
+addi $t1, $zero, 10
+addi $t2, $zero, 5
+add $t0, $t1, $t2
+add $t3, $t0, $t2
+add $t4, $t3, $t0
+sw $t1, 3($t2)
+sll $t1, $t1, 1
+beq $t1, $t3, label1
+j end
+label1:
+sub $t4, $t4, $t0
+subi $t1, $t1, 2
+srl $t3, $t3, 1
+lw $t1, 3($t2)
+and $t0, $t1, $t3
+or $t2, $t0, $t4
+j label2
+label3:
+push $t0
+push $t2
+ori $t0, $t0, 5
+pop $t0
+andi $t2, $t2, 20
+pop $t2
+nor $t2, $t2, $t2
+j end
+label2:
+bneq $t0, $t2, label3
+end:

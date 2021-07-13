@@ -1,3 +1,0 @@
-addi $t0,$t0,10
-addi $t1,$t1,4
-add $t2,$t0,$t1
